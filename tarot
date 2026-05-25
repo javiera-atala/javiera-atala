@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brujaviera | Tarot terapéutico</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    body{
+      margin:0;
+      background:#0f0b14;
+      color:#f4edf7;
+      font-family:'Inter',sans-serif;
+      line-height:1.6;
+    }
+
+    .container{
+      width:min(1100px,90%);
+      margin:auto;
+    }
+
+    header{
+      padding:30px 0;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      font-family:'Cormorant Garamond',serif;
+      font-size:32px;
+      color:#f4edf7;
+      text-decoration:none;
+    }
+
+    nav a{
+      color:#d9cde2;
+      text-decoration:none;
+      margin-left:24px;
+      font-size:14px;
+    }
+
+    .hero{
+      min-height:85vh;
+      display:flex;
+      align-items:center;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:60px;
+      align-items:center;
+    }
+
+    .eyebrow{
+      text-transform:uppercase;
+      letter-spacing:2px;
+      font-size:12px;
+      color:#b998d1;
+      margin-bottom:20px;
+    }
+
+    h1{
+      font-family:'Cormorant Garamond',serif;
+      font-size:72px;
+      line-height:0.95;
+      margin:0 0 24px;
+      font-weight:600;
+    }
+
+    .hero p{
+      color:#d7cfdd;
+      max-width:520px;
+      font-size:18px;
+    }
+
+    .buttons{
+      display:flex;
+      gap:16px;
+      margin-top:32px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:14px 22px;
+      border-radius:999px;
+      text-decoration:none;
+      font-size:14px;
+      transition:.2s ease;
+    }
+
+    .primary{
+      background:#e7c8ff;
+      color:#120d16;
+      font-weight:600;
+    }
+
+    .secondary{
+      border:1px solid rgba(255,255,255,.15);
+      color:#f4edf7;
+    }
+
+    .image{
+      position:relative;
+    }
+
+    .image img{
+      width:100%;
+      border-radius:28px;
+      object-fit:cover;
+    }
+
+    section{
+      padding:120px 0;
+    }
+
+    h2{
+      font-family:'Cormorant Garamond',serif;
+      font-size:54px;
+      margin-bottom:20px;
+      font-weight:600;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:24px;
+      margin-top:50px;
+    }
+
+    .card{
+      background:#17111d;
+      padding:32px;
+      border-radius:24px;
+      border:1px solid rgba(255,255,255,.06);
+    }
+
+    .card h3{
+      margin-top:0;
+      font-size:24px;
+      font-family:'Cormorant Garamond',serif;
+    }
+
+    .quote{
+      text-align:center;
+      font-family:'Cormorant Garamond',serif;
+      font-size:40px;
+      max-width:900px;
+      margin:auto;
+      color:#f2dfff;
+    }
+
+    footer{
+      padding:60px 0;
+      text-align:center;
+      color:#8f8398;
+      border-top:1px solid rgba(255,255,255,.08);
+    }
+
+    @media(max-width:900px){
+
+      .hero-grid{
+        grid-template-columns:1fr;
+      }
+
+      h1{
+        font-size:52px;
+      }
+
+      h2{
+        font-size:42px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <a href="#" class="logo">Brujaviera</a>
+
+      <nav>
+        <a href="#lecturas">Lecturas</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+
+      <div class="hero-grid">
+
+        <div>
+
+          <p class="eyebrow">Tarot · intuición · acompañamiento</p>
+
+          <h1>Espacios para entender, sentir y volver a ti.</h1>
+
+          <p>
+            Leo el tarot desde un enfoque terapéutico y humano.
+            Más que “adivinar”, me interesa crear conversaciones que ayuden
+            a ordenar emociones, procesos y decisiones.
+          </p>
+
+          <div class="buttons">
+
+            <a class="btn primary"
+               href="mailto:javiera@atala.cl?subject=Quiero%20agendar%20una%20lectura%20de%20tarot">
+              Agendar lectura
+            </a>
+
+            <a class="btn secondary"
+               href="https://www.instagram.com/"
+               target="_blank">
+              Instagram
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="image">
+          <img src="../javiera-atala.png" alt="Brujaviera">
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="lecturas">
+
+      <p class="eyebrow">Lecturas</p>
+
+      <h2>Tipos de sesiones</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Lectura general</h3>
+          <p>
+            Una conversación abierta para revisar energía actual,
+            emociones, bloqueos y próximos pasos.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Amor y vínculos</h3>
+          <p>
+            Lecturas enfocadas en relaciones, procesos afectivos,
+            límites y claridad emocional.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Procesos personales</h3>
+          <p>
+            Espacios más introspectivos para acompañar momentos
+            de cambio, ansiedad o búsqueda personal.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="sobre-mi">
+
+      <p class="eyebrow">Sobre mí</p>
+
+      <h2>No creo en el tarot desde el miedo.</h2>
+
+      <p style="max-width:760px;font-size:18px;color:#d7cfdd;">
+        Me interesa el tarot como herramienta de conversación,
+        introspección y acompañamiento.
+        Soy profundamente intuitiva, autodidacta y emocional,
+        y creo que muchas veces las personas no necesitan que alguien
+        les diga qué hacer, sino un espacio seguro para entenderse mejor.
+      </p>
+
+    </section>
+
+    <section>
+
+      <p class="quote">
+        “A veces el tarot no viene a darte respuestas.
+        Viene a ayudarte a hacer las preguntas correctas.”
+      </p>
+
+    </section>
+
+    <section id="contacto">
+
+      <p class="eyebrow">Contacto</p>
+
+      <h2>¿Conversemos?</h2>
+
+      <p style="max-width:600px;color:#d7cfdd;">
+        Si quieres agendar una lectura o simplemente saber más,
+        puedes escribirme directamente por mail.
+      </p>
+
+      <div class="buttons">
+
+        <a class="btn primary"
+           href="mailto:javiera@atala.cl?subject=Quiero%20agendar%20una%20lectura%20de%20tarot">
+          Escribirme
+        </a>
+
+      </div>
+
+    </section>
+
+    <footer>
+      <p>© 2026 Brujaviera · Tarot terapéutico</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
